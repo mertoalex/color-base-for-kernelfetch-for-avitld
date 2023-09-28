@@ -10,8 +10,6 @@ func assert(err bool, msg ...interface{}) {
 }
 
 func error(msg ...interface{}) {
-        colorReset := "\033[0m"
-        colorRed := "\033[31m"
-        fmt.Printf("%s[E]: %s", string(colorRed), string(colorReset))
+        fmt.Printf("%s[E]: %s", string(c1), string(r0))
         fmt.Println(msg...)
 }
